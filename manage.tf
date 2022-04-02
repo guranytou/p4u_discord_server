@@ -57,7 +57,7 @@ resource "discord_text_channel" "test" {
 }
 
 resource "discord_voice_channel" "test" {
-  name      = "bot動作確認"
+  name      = "bot動作確認用"
   server_id = discord_server.my_server.id
   category  = discord_category_channel.test.id
   position  = 14
