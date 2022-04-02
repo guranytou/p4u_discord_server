@@ -27,6 +27,7 @@ terraform {
 }
 
 resource "discord_server" "my_server" {
-  name   = "復活のP4U2"
-  region = "brazil"
+  name              = "復活のP4U2"
+  region            = "brazil"
+  system_channel_id = "918707450947960842"
 }
