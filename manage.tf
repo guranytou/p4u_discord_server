@@ -38,3 +38,27 @@ resource "discord_text_channel" "jerk" {
   category  = discord_category_channel.camp.id
   position  = 2
 }
+
+##############################
+# 動作確認用
+##############################
+
+resource "discord_category_channel" "test" {
+  name      = "動作確認用"
+  server_id = discord_server.my_server.id
+  position  = 15
+}
+
+resource "discord_text_channel" "test" {
+  name      = "bot確認用チャンネル"
+  server_id = discord_server.my_server.id
+  category  = discord_category_channel.test.id
+  position  = 47
+}
+
+resource "discord_voice_channel" "test" {
+  name      = "bot動作確認"
+  server_id = discord_server.my_server.id
+  category  = discord_category_channel.test.id
+  position  = 14
+}
