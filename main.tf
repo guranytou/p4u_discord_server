@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     discord = {
-      source = "Lucky3028/discord"
+      source  = "Lucky3028/discord"
       version = "1.0.8"
     }
   }
@@ -27,6 +27,6 @@ terraform {
 }
 
 resource "discord_server" "my_server" {
-  name              = "復活のP4U2"
-  region            = "brazil"
+  name   = "復活のP4U2"
+  region = "brazil"
 }

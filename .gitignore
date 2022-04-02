@@ -2,3 +2,4 @@
 override.tf
 *.tfvars
 *.tfstate
+*.backup
